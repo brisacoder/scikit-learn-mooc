@@ -1,6 +1,27 @@
+[project]
+name = "scikit-learn-mooc"
+version = "0.0.0"
+requires-python = ">=3.11"
+dependencies = [
+  "scikit-learn>=1.8",
+  "pandas>=3",
+  "matplotlib>=3.10",
+  "seaborn>=0.13",
+  "plotly",
+  "jupyterlab",
+  "notebook",
+  "ipython",
+]
+
+[project.optional-dependencies]
+dev = [
+  "jupyter-book<2.0",
+  "jupytext",
+  "beautifulsoup4",
+]
+
 [tool.black]
 line-length = 79
-target_version = ['py38', 'py39', 'py310', 'py311']
 preview = true
 exclude = '''
 /(
